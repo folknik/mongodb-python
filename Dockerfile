@@ -6,7 +6,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /usr/app
 RUN mkdir -p /usr/app/logs
 
-COPY app.py /usr/app
+COPY /src/app.py /usr/app
 COPy requirements.txt /usr/app
 
 RUN pip install --upgrade pip
